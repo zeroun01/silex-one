@@ -1,0 +1,14 @@
+# Redirect incoming URLs to index.php
+
+<IfModule mod_rewrite.c>
+
+	Options -MultiViews
+	#Options Indexes FollowSymLinks Includes ExecCGI
+
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	RewriteRule ^ index.php [QSA,L]
+
+</IfModule>

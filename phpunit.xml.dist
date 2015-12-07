@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://www.phpunit.de/manual/current/en/appendixes.configuration.html -->
+
+<!-- Grâce à ce fichier, PHPUnit utilisera toutes les classes de test se trouvant 
+dans le répertoire tests ainsi que ses sous-répertoires. -->
+<phpunit
+    backupGlobals               = "false"
+    backupStaticAttributes      = "false"
+    colors                      = "true"
+    convertErrorsToExceptions   = "true"
+    convertNoticesToExceptions  = "true"
+    convertWarningsToExceptions = "true"
+    processIsolation            = "false"
+    stopOnFailure               = "false"
+    syntaxCheck                 = "false"
+    bootstrap                   = "vendor/autoload.php">
+
+    <testsuites>
+        <testsuite name="MicroCMS">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
